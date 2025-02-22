@@ -75,7 +75,7 @@
             "https://static.thenounproject.com/png/1194702-200.png",
             "https://static.thenounproject.com/png/1341918-200.png",
             "https://static-00.iconduck.com/assets.00/dice-6-icon-2048x2048-42qef3py.png",
-            // "https://i.imgur.com/U7V8W9X.jpg"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnCHIsNQx001lPBDaLrnzIRtf-v3vpHR9RA&s"
         ];
 
         const dice = document.getElementById('dice');
@@ -88,7 +88,7 @@
             dice.classList.add('dice-roll');
             
             setTimeout(() => {
-                const randomNumber = Math.floor(Math.random() * 6);
+                const randomNumber = Math.floor(Math.random() * 5);
                 dice.src = diceImages[randomNumber];
                 resultText.textContent = `You rolled a ${randomNumber + 1}`;
                 loadingText.textContent = '';
